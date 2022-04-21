@@ -1,3 +1,42 @@
-.logo {
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+.logo-area {
+    position: absolute;
+    width: 100%;
+    top: 20vh;
+    height: clamp(50px, 20%, 120px);
+    padding: max(10px, 2vh) 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100%;
+}
+
+.logo-text {
     font-family: 'Amatic SC', cursive;
+    font-size: calc(6vh + 2vw);
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.footer, .footer a {
+    text-align: center;
+    position: relative;
+    bottom: calc(-100% + 30px);
+    color: rgb(255, 255, 255);
 }
