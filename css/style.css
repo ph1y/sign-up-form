@@ -68,14 +68,65 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 15% 5% 5%;
+    padding: 0 15% 3% 5%;
     font-size: max(calc(1.5vh + 0.5vw), 0.9rem);
     font-weight: 700;
     box-sizing: border-box;
 }
 
-.form {
-    flex: 1;
+.middle {
+    position: relative;
+    padding: 0 15% 5% 5%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.middle p {
+    font-size: max(calc(1.5vh + 0.5vw), 0.9rem);
+    font-weight: 700;
+}
+
+.middle input {
+    background-color: rgb(255, 253, 253);
+    border: 1px solid rgb(235, 235, 240);
+    border-radius: 3px;
+    height: clamp(1rem, calc(2vh + 1vw), 2rem);
+    font-size: max(calc(1.2vh + 0.3vw), 0.75rem);
+    padding: 0 10px;
+}
+
+.middle input:focus {
+    outline: rgb(105, 135, 230);
+    border-color: rgb(105, 135, 230);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+form,
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    gap: 2vh;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+.form-item {
+    width: min(20vw, 30rem);
+    gap: 3px;
+}
+
+label {
+    color: rgb(80, 80, 80);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: max(calc(0.75vh + 0.3vw), 0.6rem);
+    letter-spacing: 0.125rem;
 }
 
 .bottom {
